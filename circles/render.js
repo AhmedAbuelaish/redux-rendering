@@ -12,4 +12,5 @@ const render = (state) => {
             ${circlesHTML.join('')}
         </div>
     `
+    window.scrollTo(0,document.body.scrollHeight)
 }

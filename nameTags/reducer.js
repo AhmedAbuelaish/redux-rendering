@@ -3,11 +3,17 @@ const initialState = [
     "Stuart"
 ];
 
-const reducer = (state = initialState, action) => {
+const reducer = (previousState = initialState, action) => {
     // Handle actions here - make sure you don't mutate the state!
-    const { type } = action;
-
+    const { type, name } = action;
+    console.log(name)
     // Add a Name Tag
+    if (type === "ADD_NAME") {
+        return [
+            ...previousState,
+            name
+        ]
+    }
 
-    return state;
+    return previousState;
 }

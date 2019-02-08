@@ -1,5 +1,5 @@
 const render = (state) => {
-    const pokerDOM = document.getElementById('pokerContainer');
+    const pokerDOM = document.getElementById('pokerContainer')
 
     var cardsHTML = state.map(function (card) {
         return `

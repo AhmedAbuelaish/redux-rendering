@@ -15,4 +15,6 @@ const render = (state) => {
             ${nametagsHTML.join('')}           
         </div>
     `
+
+    window.scrollTo(0,document.body.scrollHeight)
 }
